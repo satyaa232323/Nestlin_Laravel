@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d4f131;
+}
+
+.container {
+  display: flex;
+  width: 60%;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.logo-section {
+  background-color: #49c4b1;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.logo-section img {
+  width: 75%;
+  height: auto;
+}
+
+.form-section {
+  width: 60%;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-section h2 {
+  font-size: 2rem;
+  color: #49c4b1;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #49c4b1;
+}
+
+button {
+  padding: 15px;
+  background-color: #49c4b1;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3aa894;
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+p a {
+  color: #49c4b1;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+
+  .form-section {
+    padding: 35px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .form-section {
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .logo-section {
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .form-section {
+    width: 100%;
+    padding: 30px;
+    border-radius: 0 0 12px 12px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  input, button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 400px) {
+  form {
+    gap: 10px;
+  }
+
+  input, button {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}

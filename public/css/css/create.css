@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e5f6f5;
+}
+
+.container {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 60%;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+
+p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+p a {
+  color: #49c4b1;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      width: 90%;
+      max-width: 500px;
+  }
+
+  .logo-section {
+      padding: 10px;
+  }
+
+  .form-section {
+      padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-section {
+      padding: 15px;
+  }
+
+  input, button {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  h2 {
+      font-size: 1.5em;
+  }
+}
+
+.logo-section {
+  background: linear-gradient(135deg, #49c4b1, #4ed2c2);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-section img {
+  width: 120px;
+  height: auto;
+}
+
+.form-section {
+  flex: 2;
+  padding: 40px;
+}
+
+.form-section h2 {
+  color: #49c4b1;
+  margin-bottom: 20px;
+  text-align: center; /* Centering the title */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #49c4b1;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #3aa894;
+}
+
+p {
+  text-align: center; /* Centering the paragraph */
+}
