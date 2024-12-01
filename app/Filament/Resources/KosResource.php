@@ -32,7 +32,7 @@ class KosResource extends Resource
                 Forms\Components\TextInput::make('harga')
                 ->label('Harga/Bln')
                 ->placeholder('Masukan harga'),
-                Forms\Components\RichEditor::make('lokasi')
+                Forms\Components\Textarea::make('lokasi')
                 ->label('Lokasi Kos')
                 ->placeholder('Masukan lokasi kos'),
                 Forms\Components\FileUpload::make('gambar')
@@ -53,6 +53,7 @@ class KosResource extends Resource
                 ->limit(50) 
                 ->getStateUsing(fn ($record) => strip_tags($record->lokasi)),
                 Tables\Columns\TextColumn::make('harga')
+                ->money('IDR', locale: 'ID')
                 ->searchable()
                 ->sortable()
                 ->label('Harga Kos'),

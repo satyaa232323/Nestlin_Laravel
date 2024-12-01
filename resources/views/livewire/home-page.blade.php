@@ -14,7 +14,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde placeat inventore quae quas vel aspernatur quis ducimus magnam maxime?</p>
         </div>
         <img src="assets/img_3.png" alt="Information Image" />
-    </section>  kosts' => $kosts]);
+    </section>  ;
 
     @foreach ($kosts as $kost)
     <section class="boarding-house">
