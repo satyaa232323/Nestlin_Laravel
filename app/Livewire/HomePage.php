@@ -9,6 +9,8 @@ class HomePage extends Component
 {
     
     public function mount(){
+
+        
     }
         
     public function render()
@@ -16,6 +18,8 @@ class HomePage extends Component
         $kosts = Kos::all();
         return view('livewire.home-page', ['kosts' => $kosts]);
     }
+
+    
 
    
 }

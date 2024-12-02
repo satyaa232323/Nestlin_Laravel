@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\DetailPage;
 use App\Livewire\HomePage;
 use App\Livewire\MenuPage;
 use App\Livewire\ViewKost;
@@ -20,3 +21,5 @@ Route::get('/menu', function () {
 
 Route::get('/', HomePage::class)->name('home');
 Route::get('/menu', MenuPage::class);
+Route::get('/kos/{id}',  DetailPage::class)->name('detail');
+Route::get('/menu', MenuPage::class)->name('menu');

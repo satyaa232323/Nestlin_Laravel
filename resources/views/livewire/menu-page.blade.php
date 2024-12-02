@@ -5,114 +5,19 @@
     
      <section class="Kost-card">
         <div class="kost-content">
+            @foreach ($kosts as $kost)
             <div class="boarding-card">
                 <img src="assets/img_3.png" alt="Kos Komar">
                 <div class="card-text">
-                    <h2>Kos Komar</h2>
-                    <h3>Rp. 700.000 <span>/Bln</span></h3>
+                    <h2>{{$kost->nama}}</h2>
+                    <h3>{{$kost->harga}}<span>/Bln</span></h3>
                 </div>
-                <p>Purwokerto Selatan</p>
+                <p>{{$kost->lokasi}}</p>
                 <div class="icons">
                     <img src="assets/icons.svg" alt="" srcset="">
                 </div>
-                <button class="btn">More Details</button>
+                <a href="{{ route('detail', $kost->id) }}" class="btn">More Details</a>
             </div>
-            <div class="boarding-card">
-                <img src="assets/img_3.png" alt="Kos Komar">
-                <div class="card-text">
-                    <h2>Kos Komar</h2>
-                    <h3>Rp. 700.000 <span>/Bln</span></h3>
-                </div>
-                <p>Purwokerto Selatan</p>
-                <div class="icons">
-                    <img src="assets/icons.svg" alt="" srcset="">
-                </div>
-                <button class="btn">More Details</button>
-            </div>
-            <div class="boarding-card">
-                <img src="assets/img_3.png" alt="Kos Komar">
-                <div class="card-text">
-                    <h2>Kos Komar</h2>
-                    <h3>Rp. 700.000 <span>/Bln</span></h3>
-                </div>
-                <p>Purwokerto Selatan</p>
-                <div class="icons">
-                    <img src="assets/icons.svg" alt="" srcset="">
-                </div>
-                <button class="btn">More Details</button>
-            </div>
-            <div class="boarding-card">
-                <img src="assets/img_3.png" alt="Kos Komar">
-                <div class="card-text">
-                    <h2>Kos Komar</h2>
-                    <h3>Rp. 700.000 <span>/Bln</span></h3>
-                </div>
-                <p>Purwokerto Selatan</p>
-                <div class="icons">
-                    <img src="assets/icons.svg" alt="" srcset="">
-                </div>
-                <button class="btn">More Details</button>
-            </div>
-            <div class="boarding-card">
-                <img src="assets/img_3.png" alt="Kos Komar">
-                <div class="card-text">
-                    <h2>Kos Komar</h2>
-                    <h3>Rp. 700.000 <span>/Bln</span></h3>
-                </div>
-                <p>Purwokerto Selatan</p>
-                <div class="icons">
-                    <img src="assets/icons.svg" alt="" srcset="">
-                </div>
-                <button class="btn">More Details</button>
-            </div>
-            <div class="boarding-card">
-                <img src="assets/img_3.png" alt="Kos Komar">
-                <div class="card-text">
-                    <h2>Kos Komar</h2>
-                    <h3>Rp. 700.000 <span>/Bln</span></h3>
-                </div>
-                <p>Purwokerto Selatan</p>
-                <div class="icons">
-                    <img src="assets/icons.svg" alt="" srcset="">
-                </div>
-                <button class="btn">More Details</button>
-            </div>
-            <div class="boarding-card">
-                <img src="assets/img_3.png" alt="Kos Komar">
-                <div class="card-text">
-                    <h2>Kos Komar</h2>
-                    <h3>Rp. 700.000 <span>/Bln</span></h3>
-                </div>
-                <p>Purwokerto Selatan</p>
-                <div class="icons">
-                    <img src="assets/icons.svg" alt="" srcset="">
-                </div>
-                <button class="btn">More Details</button>
-            </div>
-            <div class="boarding-card">
-                <img src="assets/img_3.png" alt="Kos Komar">
-                <div class="card-text">
-                    <h2>Kos Komar</h2>
-                    <h3>Rp. 700.000 <span>/Bln</span></h3>
-                </div>
-                <p>Purwokerto Selatan</p>
-                <div class="icons">
-                    <img src="assets/icons.svg" alt="" srcset="">
-                </div>
-                <button class="btn">More Details</button>
-            </div>
-            <div class="boarding-card">
-                <img src="assets/img_3.png" alt="Kos Komar">
-                <div class="card-text">
-                    <h2>Kos Komar</h2>
-                    <h3>Rp. 700.000 <span>/Bln</span></h3>
-                </div>
-                <p>Purwokerto Selatan</p>
-                <div class="icons">
-                    <img src="assets/icons.svg" alt="" srcset="">
-                </div>
-                <button class="btn">More Details</button>
-            </div>
-        </div>
+            @endforeach
      </section>
     </div>
